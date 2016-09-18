@@ -15,7 +15,7 @@ class PyCac():
         self.config = None
         self.net = None
         self.config = self.configurator.getConfig()
-        self.net = Networking.Networking(self.config["apikey"],
+        self.net = Networking.Networking(self.config["apiKey"],
                                          self.config["login"])
 
     def error(self, msg):

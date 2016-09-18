@@ -26,7 +26,7 @@ class Networking():
     def parseResponse(self, response):
         if response.status_code == 200:
             return response.text
-        return response.status_code
+        return str(response.status_code) + " - " + response.text
 
     def get(self, page):
         """Performs a get request of the specified page"""
